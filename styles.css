@@ -6,6 +6,7 @@ body {
     height: 96vh;
     width: 96vw;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .content {
