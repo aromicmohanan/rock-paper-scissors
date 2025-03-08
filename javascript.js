@@ -53,12 +53,22 @@ function playRound() {
 }
 
 function displayChoices() {
-    playerChoiceText.textContent = `Your Last Choice: ${humanChoice.toUpperCase()}`
-    computerChoiceText.textContent = `Computer Last Choice: ${computerChoice.toUpperCase()}`
+    switch (humanChoice) {
+        case ("rock"): playerChoiceText.setAttribute("style", "color: lightcoral"); break;
+        case ("paper"): playerChoiceText.setAttribute("style", "color: lightgreen"); break;
+        case ("scissors"): playerChoiceText.setAttribute("style", "color: lightblue"); break;
+    }
+    switch (computerChoice) {
+        case ("rock"): computerChoiceText.setAttribute("style", "color: lightcoral"); break;
+        case ("paper"): computerChoiceText.setAttribute("style", "color: lightgreen"); break;
+        case ("scissors"): computerChoiceText.setAttribute("style", "color: lightblue"); break;
+    }
+    playerChoiceText.textContent = `Your Choice: ${humanChoice.toUpperCase()}`
+    computerChoiceText.textContent = `Computer Choice: ${computerChoice.toUpperCase()}`
 }
 
 function displayScores() {
-    playerScoreText.textContent = `Your Score ${humanScore}`
+    playerScoreText.textContent = `Your Score: ${humanScore}`
     computerScoreText.textContent = `Computer Score: ${computerScore}`
 }
 
