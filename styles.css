@@ -15,7 +15,7 @@ body {
     border-radius: 32px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 4px;
+    box-shadow: 0px 0px 8px;
     background-color: ghostwhite;
 }
 
@@ -25,7 +25,7 @@ body {
     font-weight: bold;
     border-style: solid;
     border-radius: 8px;
-    box-shadow: 0px 0px 2px;
+    box-shadow: 0px 0px 4px;
 }
 
 .button.rock {
