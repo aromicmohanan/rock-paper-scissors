@@ -28,7 +28,7 @@ function getComputerChoice() {
 }
 
 function playRound() {
-    resultText.textContent = "";
+    resultText.textContent = "...";
 
     computerChoice = getComputerChoice();
 
